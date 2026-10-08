@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - ChronoShift</title>
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --primary-dark: #4338ca;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --badge-bg: #e0e7ff;
+      --badge-text: #3730a3;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f1f5f9;
+        --text-muted: #94a3b8;
+        --bg: #0f172a;
+        --card-bg: #1e293b;
+        --border: #334155;
+        --badge-bg: #312e81;
+        --badge-text: #c7d2fe;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background-color: var(--bg);
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 2.5rem;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    header {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    .meta {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-top: 1.75rem;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    p, ul {
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    .highlight-card {
+      background: rgba(79, 70, 229, 0.05);
+      border-left: 4px solid var(--primary);
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      margin: 1.25rem 0;
+    }
+
+    .highlight-card p {
+      margin: 0;
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Privacy Policy</span>
+      <h1>ChronoShift</h1>
+      <div class="meta">
+        <strong>Effective Date:</strong> October 8, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> October 8, 2026
+      </div>
+    </header>
+
+    <div class="highlight-card">
+      <p>🔒 <strong>Summary:</strong> ChronoShift is an offline-first, privacy-by-design application. Your work schedules, sleep entries, personal notes, and circadian health data are stored solely on your device. We do not operate user accounts, do not sell personal data, do not display third-party advertisements, and do not track you.</p>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>ChronoShift ("we", "our", or "the App") is developed to help shift workers manage rotating work schedules, track circadian rhythms, and optimize rest and recovery. This Privacy Policy describes how information is handled when you use the ChronoShift mobile application.</p>
+
+    <h2>2. Data Storage & Local Processing (Offline-First)</h2>
+    <p>ChronoShift is engineered with privacy as a foundational principle:</p>
+    <ul>
+      <li><strong>100% Local Storage:</strong> All your shift patterns, daily work assignments, overrides, calendar notes, chronotype preferences, and sleep logs are stored exclusively in your device's local sandbox (IndexedDB and Web Storage).</li>
+      <li><strong>No Remote Databases:</strong> We do not operate remote servers or cloud databases that collect or store your shift entries, schedule records, or notes.</li>
+      <li><strong>No User Registration:</strong> You do not need an account, email address, password, or profile registration to use the application.</li>
+    </ul>
+
+    <h2>3. Permissions & Device Information</h2>
+    <p>ChronoShift requests only the minimal permissions necessary to deliver its core circadian coaching features:</p>
+    <ul>
+      <li>
+        <strong>Location (Approximate & Precise - ACCESS_COARSE_LOCATION / ACCESS_FINE_LOCATION):</strong>
+        <br>
+        <em>Purpose:</em> If you choose to enable the weather and environmental UV index feature, ChronoShift accesses your device's GPS coordinates strictly to fetch localized meteorological data (temperature, daylight hours, UV index, and sunlight windows) relevant to circadian health and sleep scheduling.
+        <br>
+        <em>Usage & Retention:</em> Coordinates are used solely on-demand to query the public weather API. They are never recorded in a location history, never transmitted to proprietary analytics servers, never shared with advertisers, and never associated with any user identity.
+      </li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+    <p>To provide accurate solar and circadian environmental cues, ChronoShift interacts with:</p>
+    <ul>
+      <li><strong>Open-Meteo API:</strong> An open weather API used to fetch solar irradiance, daylight duration, temperature, and UV indices based on requested coordinates. Open-Meteo does not require personal information, API keys with user identities, or track user activity. For details, refer to Open-Meteo's privacy documentation.</li>
+    </ul>
+    <p>ChronoShift does <strong>NOT</strong> integrate:</p>
+    <ul>
+      <li>Third-party advertising SDKs (e.g., Google AdMob, Unity Ads, Facebook Audience Network).</li>
+      <li>Cross-device behavioral tracking frameworks.</li>
+      <li>Data brokers or analytics syndicates.</li>
+    </ul>
+
+    <h2>5. Data Retention & User Control</h2>
+    <p>Because all data resides on your device, you maintain complete and absolute control over it:</p>
+    <ul>
+      <li><strong>Editing and Deleting:</strong> You can edit or delete any note, override, or schedule entry at any time within the app interface.</li>
+      <li><strong>Resetting Data:</strong> You can wipe all stored data at any point from the app's settings menu or by clearing the application storage via your Android device settings (<em>Settings &gt; Apps &gt; ChronoShift &gt; Storage &gt; Clear Data</em>).</li>
+      <li><strong>Uninstalling:</strong> Uninstalling the application automatically and permanently purges all local storage and cache files created by ChronoShift from your device.</li>
+    </ul>
+
+    <h2>6. Children's Privacy</h2>
+    <p>ChronoShift is designed for adult shift workers (including healthcare staff, emergency personnel, industrial and logistics workers). We do not knowingly collect or solicit personal information from children under the age of 13. If you believe that a child has provided us with personal information, please contact us immediately.</p>
+
+    <h2>7. Security</h2>
+    <p>We value your trust. Your data is isolated within the sandboxed storage provided by the Android operating system and Capacitor runtime. Because we do not transmit or store your personal schedule on external servers, your data is protected against remote server breaches.</p>
+
+    <h2>8. GDPR & Global Privacy Rights Compliance</h2>
+    <p>Under the European Union General Data Protection Regulation (GDPR) and other global privacy laws (such as CCPA/CPRA):</p>
+    <ul>
+      <li><strong>Right to Access:</strong> You can view all your stored information at any time within the application.</li>
+      <li><strong>Right to Erasure:</strong> You can immediately delete all stored data by uninstalling the application or using the in-app reset functions.</li>
+      <li><strong>Right to Portability:</strong> Your data remains under your direct physical possession on your device.</li>
+    </ul>
+
+    <h2>9. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy periodically to reflect app updates or regulatory standards. Any modifications will be reflected with a revised "Last Updated" date at the top of this document. We encourage you to review this policy whenever you update the application.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy, please contact the developer team at:</p>
+    <p>
+      <strong>Developer:</strong> ChiveSoft / ChronoShift Team<br>
+      <strong>Email:</strong> <a href="mailto:chivesoft@gmail.com">chivesoft@gmail.com</a><br>
+      <strong>Application:</strong> ChronoShift (Android &amp; Desktop)
+    </p>
+
+    <footer>
+      &copy; 2026 ChronoShift. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
